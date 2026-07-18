@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase | Victory Omoregie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff4a8d;
+        }
+        .project-media {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #252525;
+            border-bottom: 2px solid #ff4a8d;
+        }
+        .project-content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-tags {
+            margin: 0.5rem 0 1rem 0;
+        }
+        .tag {
+            background-color: #2a2a2a;
+            color: #ff4a8d;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+        .project-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .btn-secondary {
+            color: #ffffff;
+            border: 1px solid #ff4a8d;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            flex: 1;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255, 74, 141, 0.1);
+        }
+        .video-container {
+            margin-top: 4rem;
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 3px solid #ff4a8d;
+            text-align: center;
+        }
+        .video-wrapper {
+            max-width: 700px;
+            margin: 1.5rem auto 0 auto;
+        }
+        video {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Victory<span>.O</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-section">
+        <h2 style="font-size: 2.5rem; text-align: center;">Featured <span>Projects</span></h2>
+        <p style="text-align: center; color: #a0a0a0; margin-bottom: 1rem;">A compilation of backend engineering developments and creative media alignments.</p>
+
+        <!-- Projects Grid Dashboard -->
+        <div class="projects-grid">
+            
+            <!-- Project 1: Java REST API -->
+            <article class="project-card">
+                <img src="assets/rest.jpg" alt="Enterprise REST API Architecture" class="project-media">
+                <div class="project-content">
+                    <div>
+                        <h3>Enterprise RESTful Web Services</h3>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <p>Designed and deployed a fully secure, high-throughput REST API infrastructure utilizing Spring Boot. Features complex relational database mapping, automated Maven builds, and seamless data layer operations tailored for enterprise workflows.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/VictoryOmoregie/" target="_blank" class="btn-secondary">View Repository</a>
+                        <a href="https://railway.app" target="_blank" class="btn-secondary">Live Demo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Database Hosting Configuration -->
+            <article class="project-card">
+                <img src="assets/database.jpg" alt="Cloud Database Deployment" class="project-media">
+                <div class="project-content">
+                    <div>
+                        <h3>Automated Database Cloud Provisioning</h3>
+                        <div class="project-tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Railway</span>
+                            <span class="tag">Git</span>
+                        </div>
+                        <p>Established a secure, scalable remote cloud environment for operational relational databases hosted on Railway. Integrated structured environment configurations and automated continuous pipelines directly linked via version-controlled repositories.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/VictoryOmoregie/" target="_blank" class="btn-secondary">View Repository</a>
+                        <a href="https://railway.app" target="_blank" class="btn-secondary">Live Demo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Technical Education Curriculum -->
+            <article class="project-card">
+                <img src="assets/computingframe.jpg" alt="Computing Frameworks Guide" class="project-media">
+                <div class="project-content">
+                    <div>
+                        <h3>Introductory Computing Framework</h3>
+                        <div class="project-tags">
+                            <span class="tag">Education</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                        <p>Developed a comprehensive, highly accessible introductory technical framework designed to introduce young students to fundamental structural computing, hardware logic, and basic software engineering principles.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/VictoryOmoregie/" target="_blank" class="btn-secondary">View Specs</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Technical Multimedia Section (Meets Media Requirement) -->
+        <section class="video-container">
+            <h3>Automotive Design & Custom Restoration Insight</h3>
+            <p style="color: #a0a0a0; font-size: 0.95rem;">An analysis of structural design, custom fabrication, and modern vehicular build mechanics.</p>
+            <div class="video-wrapper">
+                <!-- Drop a sample car video file into assets/car-promo.mp4 or leave as placeholder -->
+                <video controls poster="assets/car-project.jpg">
+                    <source src="assets/car-promo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026 VICTORY'S MIVA CREATION All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

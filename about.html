@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Victory Omoregie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Target styles specifically for the About page layout */
+        .about-section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .about-card {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #ff4a8d;
+        }
+        .about-card h3 {
+            color: #ff4a8d;
+            margin-bottom: 1rem;
+        }
+        .skills-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        .skills-list li::before {
+            content: "⚡ ";
+            color: #ff4a8d;
+        }
+        /* Style for required HTML Table */
+        .academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: #1a1a1a;
+        }
+        .academic-table th, .academic-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .academic-table th {
+            background-color: #ff4a8d;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Victory<span>.O</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">About <span>Me</span></h2>
+
+        <!-- Grid Layout for Career and Hobbies -->
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Career Aspirations</h3>
+                <p>As a first degree University Graduate specializing in Java enterprise ecosystems, my vision is to engineer ultra-scalable backends and cloud native applications. Having worked with Techminds, I thrive on writing clean, efficient, and reliable code that bridges complex architecture with seamless user experiences looking to expand my skills here at miva through this second degree .</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Hobbies & Personal Interests</h3>
+                <p>Beyond the IDE, I am deeply fascinated by automotive design, structural builds, and the creative artistry behind custom car restoration. I closely track specialized programs from creators like Classic Car Studio and West Coast Customs. I also unwind by diving into competitive gaming or listening to high-tempo music like Afroswing and Amapiano.</p>
+            </div>
+        </div>
+
+        <!-- Technical Skills Stack (HTML Lists Requirement) -->
+        <div class="about-card" style="margin-bottom: 3rem;">
+            <h3>Technical Skills Stack</h3>
+            <ul class="skills-list">
+                <li>Java Development</li>
+                <li>Spring Boot framework</li>
+                <li>Maven & Dependency Management</li>
+                <li>MySQL Database Design</li>
+                <li>Git & GitHub Workflows</li>
+                <li>Cloud Deployments (Railway)</li>
+                <li>Semantic HTML5 & CSS Grid/Flexbox</li>
+                <li>Asynchronous JavaScript (DOM)</li>
+            </ul>
+        </div>
+
+        <!-- Educational Background (HTML Table Requirement) -->
+        <h3 style="margin-bottom: 1rem; color: #ff4a8d;">Educational Timeline</h3>
+        <table class="academic-table">
+            <thead>
+                <tr>
+                    <th>Degree / Program</th>
+                    <th>Institution</th>
+                    <th>Status / Timeline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BSc. Computer Science</td>
+                    <td>ESTAM University</td>
+                    <td>Graduated (Class of 2024)</td>
+                </tr>
+                <tr>
+                    <td>Advanced Java Frameworks</td>
+                    <td>Techminds Enterprise Track</td>
+                    <td>Professional Specialization</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026 VICTORY'S MIVA CREATION All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

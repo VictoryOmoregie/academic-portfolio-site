@@ -1,0 +1,174 @@
+/* ==========================================
+   GLOBAL CONFIGURATION & COLORS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Deep Off-Black */
+    color: #ffffff; /* Crisp White Text */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+header {
+    background-color: #1a1a1a; /* Matte Black Card Color */
+    border-bottom: 2px solid #ff4a8d; /* Professional Pink Accent */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #ff4a8d; /* Pink Highlight */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #a0a0a0; /* Muted Gray for unselected items */
+    font-weight: 500;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4a8d; /* Dynamic Pink Hover State */
+}
+
+/* ==========================================
+   HOMEPAGE HERO SECTION
+   ========================================== */
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+    color: #ff4a8d;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-text p {
+    color: #dcdcdc;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #ff4a8d;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e91e63;
+    transform: translateY(-2px);
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff4a8d;
+    box-shadow: 0 0 20px rgba(255, 74, 141, 0.2);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (Mobile Friendly)
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
